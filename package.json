@@ -1,0 +1,32 @@
+{
+  "name": "react-clickeat",
+  "version": "1.0.0",
+  "description": "Custom spa of clickeat with reactjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "deploy": "now"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheEnmanuel23/react-clickeat.git"
+  },
+  "keywords": [
+    "clickeat",
+    "reactjs",
+    "spa"
+  ],
+  "author": "Enmanuel Jarquin <enmisac@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheEnmanuel23/react-clickeat/issues"
+  },
+  "homepage": "https://github.com/TheEnmanuel23/react-clickeat#readme",
+  "dependencies": {
+    "next": "^2.4.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  }
+}
