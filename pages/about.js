@@ -1,28 +1,11 @@
-import React, { Component } from 'react'
-import Link from 'next/link'
+import Layout from '../components/Layout'
 
-class AboutPage extends Component {
-    static async getInitialProps () {
-        return { name: 'Enmanuel Jarquin' }
-    }
-
-    render () {
-        return (
-            <main>
-                <h1>About { this.props.name }</h1>
-                <Link prefetch href="/">
-                    <a>Ir a <em>Home</em></a>
-                </Link>
-                <style jsx>
-                    {`
-                        h1 {
-                            color: blue;
-                        }
-                    `}
-                </style>
-            </main>
-        )
-    }
+const About = () => {
+    return (
+       <Layout>
+        <p>This is about page</p>
+       </Layout>
+    )
 }
 
-export default AboutPage
+export default About

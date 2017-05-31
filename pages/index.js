@@ -1,21 +1,26 @@
-import React from 'react'
+import Layout from '../components/Layout'
 import Link from 'next/link'
 
-function HomePage () {
+const PostLink = (props) => {
     return (
-        <main>
-            <h1>Hola!!!</h1>
-            <Link href="/about">
-                <a>Ir a <em>/about</em></a>
+        <li>
+            <Link href={`/post?title=${props.title}`}>
+                <a>{props.title}</a>
             </Link>
-            <style jsx>{`
-                h1 {
-                    color: red;
-                }
-            `}
-            </style>
-        </main>
+        </li>
     )
 }
 
-export default HomePage
+const Index = () => {
+    return (
+       <Layout>
+            <ul>
+                <PostLink title="Hello next.js" />
+                <PostLink title="Learn Nextjs awesome" />
+                <PostLink title="Deploy apps with zeit" />
+            </ul>
+       </Layout>
+    )
+}
+
+export default Index
